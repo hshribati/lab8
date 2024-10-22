@@ -1,5 +1,5 @@
-/* Top Navigation (for <nav>) */
-nav {
+/* Top Navigation Bar */
+#main-navbar {
     background-color: blue;
     overflow: hidden;
     width: 100%;
@@ -10,17 +10,32 @@ nav {
     text-align: center;
 }
 
-nav a {
+#main-navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#main-navbar ul li {
     display: inline-block;
+}
+
+#main-navbar ul li a {
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
+    background-color: #000; /* Default background color for links */
 }
 
-/* Side Navigation (for <aside>) */
-aside {
+#main-navbar ul li#onpage a {
+    background-color: #444; /* Highlight the active page */
+}
+
+/* Sidebar Navigation */
+#sidebar {
     position: fixed;
     right: 0;
+    top: 0;
     background-color: red;
     height: 100%;
     width: 20%;
@@ -29,10 +44,19 @@ aside {
     text-align: center;
 }
 
-aside a {
+#sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#sidebar ul li {
     padding: 15px 0;
+}
+
+#sidebar ul li a {
     display: block;
     color: #fff;
     text-decoration: none;
-    background-color: #000;
+    background-color: #000; /* Background color for sidebar links */
 }
