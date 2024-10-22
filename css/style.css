@@ -1,6 +1,6 @@
 /* Top Navigation Bar */
 #main-navbar {
-    background-color: blue;
+    background-color: blue; /* Background color for the top navbar */
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -11,8 +11,8 @@
 }
 
 #main-navbar ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -24,19 +24,18 @@
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
-    background-color: #000; /* Default background color for links */
+    background-color: #000; /* Black background for each link */
 }
 
-#main-navbar ul li#onpage a {
-    background-color: #444; /* Highlight the active page */
+#main-navbar ul li a:hover {
+    text-decoration: underline overline; /* Underline and overline when hovering */
 }
 
 /* Sidebar Navigation */
 #sidebar {
     position: fixed;
     right: 0;
-    top: 0;
-    background-color: red;
+    background-color: red; /* Red background for the sidebar */
     height: 100%;
     width: 20%;
     list-style-type: none;
@@ -45,8 +44,8 @@
 }
 
 #sidebar ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -58,5 +57,9 @@
     display: block;
     color: #fff;
     text-decoration: none;
-    background-color: #000; /* Background color for sidebar links */
+    background-color: #000; /* Black background for each sidebar link */
+}
+
+#sidebar ul li a:hover {
+    text-decoration: underline overline; /* Underline and overline when hovering */
 }
